@@ -1,1 +1,962 @@
-/* You can add global styles to this file, and also import other style files */
+/*BASE STYLE*/
+body{
+    font-family: 'Oxygen', sans-serif;
+    color:#444;
+    font-size: 16px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+/*VERY TOP HEADER*/
+#top-header {
+    position: relative;
+    /* background-color: #45494e; */
+    background-color:#444;
+    padding-bottom: 40px;
+
+}
+
+#phone, #email{
+
+    margin-top: 10px;
+    padding-right: 5px;
+}
+
+#email i, #phone i{
+    padding-right: 5px;
+
+}
+#top-header #scocial-media-icon a i{
+    background-color: #fff;
+    border-radius: 30px;
+    color: #444;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    line-height: 22px;
+    margin: auto 3px;
+    font-size: 13px;
+    text-align: center;
+}
+/*Change color when hover on each icon*/
+#top-header #scocial-media-icon a .fa-facebook:hover{/*facebook*/
+    background-color:#3b5998 ;
+    color: white;
+}
+#top-header #scocial-media-icon a .fa-telegram-plane:hover{/*telegram*/
+    background-color:#0088cc;
+    color: white;
+}
+#top-header #scocial-media-icon a .fa-youtube:hover{/*youtube*/
+    background-color:#FF0000;
+    color: white;
+}
+#email, #scocial-media-icon{
+    margin-top: 10px;
+}
+#phone a, #email a{
+   color:#fff;
+   font-size: 15px;
+}
+#phone a:hover, #email a:hover{
+    text-decoration: none;
+}
+/*END VERY TOP HEADER*/
+
+/*HEADER*/
+
+#logo-img {/*Logo image*/
+    background-image: url("assets/images/company-logo.png");
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 48px;
+    margin-right: 10px;
+    margin-top:10px;
+}
+.navbar-brand h1{/* Company name */
+    text-transform: uppercase;
+    font-weight: bold;
+    color:#545259;
+    font-size: 130%;
+    margin-top: 10px;;
+    margin-bottom: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    word-spacing: 0.2px;
+
+}
+.navbar-brand a:hover{
+    text-decoration: none;
+}
+.navbar-brand #factory{/*factory*/
+    font-size: 0.6em;
+    text-transform: uppercase;
+
+}
+#nav-list a {/*Navigation list items*/
+    color: #444;
+    font-size: 0.8em;
+    padding-right: 20px;
+    text-align: center;
+    font-weight: 600;
+}
+
+#nav-list a:hover {/*Navigation list items*/
+    background-color:#45494e;
+    color: #fff !important;
+
+}
+.custom-toggler.navbar-toggler {/*Navbar toggler color for border*/
+    border-color:#45494e;
+}
+
+.custom-toggler .navbar-toggler-icon {/*Navbar toggler color for icon*/
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(69, 73, 78)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+/*END OF HEADER*/
+
+/*HOME PAGE*/
+.carousel-inner{
+    margin-bottom: 20px;
+    /* border: 0.5px solid gray; */
+    background-color: #000;
+    height: 100%;
+}
+.carousel-inner img{/*Carousel slideshow */
+    width:100%;
+}
+
+.carousel-control-prev, .carousel-control-next{/*Color for carousel prev and next icon*/
+    text-decoration: none;
+    background-color: rgb(207, 203, 203);
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    margin-top: 23%;
+}
+.carousel-indicators{/*color for carousel-indicator*/
+    text-decoration: none;
+    background-color: rgb(207, 203, 203);
+    width: 50px;
+    margin-left: 50%;
+
+}
+
+#offer-tiles{
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+#offer-tiles section{
+background-color:#fff;
+text-align: center;
+max-width: 350px;
+height: 200px;
+margin-right: 20px;
+margin-top: 10px;
+margin-bottom: 25px;
+/* border:1px solid #000; */
+position: relative;
+padding-left: 0;
+padding-right:0 ;
+}
+#offer-tiles section:hover{/*Hover effect on offer tiles*/
+    box-shadow: 0 0 10px #000;
+}
+#offer-tiles a {
+    text-decoration: none;
+
+}
+
+#offer-tiles a img {
+    width: 350px;
+    height: 200px;
+}
+
+#offer-tiles span{
+    font-weight: bold;
+    background-color:#222;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width:100%;
+    opacity: 0.6;
+}
+
+#about-us-container{
+    margin-bottom: 20px;
+}
+#about-us-container #text-about-us h3{/*About us title*/
+    margin-top: 150px;
+
+}
+#about-us-container #text-about-us p{/*About us paragraph*/
+    text-align: justify;
+
+}
+#about-us-container #text-about-us{
+    position: relative;
+    margin-bottom: 30px;
+}
+
+#about-us-container #text-about-us p a span{/*Read More*/
+    background-color:#000;
+    color: #fff;
+    opacity: 0.8;
+    text-align: center;
+    width:30%;
+    height: 30px;
+    padding-top: 2.5px;
+    position: absolute;
+    top: 60%;
+    right: 33%;
+
+}
+#about-us-container #text-about-us p a span:hover{/*Read More hover effect*/
+    /* box-shadow: 0 0 6px #000; */
+    border: 2px solid #222;
+    background-color:#fff;
+    color: #222;
+
+}
+
+#about-us-container #photo-brush-paint img{/*brush with top text image*/
+    width:95%;
+    height: 600px;
+}
+
+#sample-work {
+   margin-bottom: 20px;
+   margin-top: 20px;;
+}
+
+#sample-work section{
+  margin-bottom: 25px;
+}
+
+
+#sample-work .row section span{
+    margin-left:30%;
+}
+
+#sample-work section img{
+  width:100%;
+  height:300px;
+}
+
+/*END OF HOME PAGE*/
+
+/*ABOUTUS PAGE*/
+#aboutUsAndContactus {
+    background-color: #444;
+    color: #fff;
+    padding-bottom: 50px;
+}
+#aboutUsAndContactus h2 {
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+#aboutUsAndContactus p {
+    width: 54%;
+    text-align: justify;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+}
+#aboutUsAndContactus a {
+    text-decoration: none;
+}
+
+#aboutUsAndContactus span{
+    background-color:#fff;
+    color:#222;
+    padding:20px 60px;
+}
+#aboutUsAndContactus span:hover{
+    background-color:#444;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+
+/*END OF ABOUTUS PAGE*/
+
+/*PRODUCTS PAGE*/
+#our-product{
+    background-color: #444;
+    color: #fff;
+    padding-bottom: 50px;
+}
+#our-product h2 {
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+#our-product p {
+    width: 50%;
+    text-align: justify;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+#productAndDesc {
+    margin-top: 20px;
+}
+#productAndDesc #product-img img{
+    width:60%;
+    height: 70%;
+
+}
+#productAndDesc #product-desc{
+    margin-top: 15px;
+}
+#productAndDesc #product-desc #product-item-name {
+    font-size: 1.3em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#productAndDesc #product-desc #product-item-desc{
+    width:60%;
+    text-align: justify;
+    margin-top: 20px;
+}
+
+/*END OF PRODUCTS PAGE*/
+
+/*SERVICES PAGE*/
+#our-service{
+    background-color: #444;
+    color: #fff;
+    padding-bottom: 50px;
+}
+#our-service h2 {
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+#our-service p {
+    width: 50%;
+    text-align: justify;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+#serviceDescAndImage #serviceDesc{
+    margin-top: 150px;
+}
+#serviceDescAndImage #serviceDesc p{
+     width: 70%;
+}
+
+#serviceDescAndImage #deliveryImage img{
+    width:90%;
+    height:400px;
+}
+/*END OF SERVICES PAGE*/
+
+/*CONTACT US PAGE*/
+#contactUs {
+    background-color: #444;
+    color: #fff;
+    padding-bottom: 50px;
+}
+#contactUs h2 {
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+#contact-options{
+    margin-top: 50px;
+}
+#contact-options  section{
+    border: 1px solid #ced4da;
+    width:30%;
+    height: 150px;
+    margin-right: 20px;
+    float: left;
+    position: relative;
+    margin-bottom: 50px;
+}
+#contact-options section i{
+    font-size: 4em;
+    position:absolute;
+    left:15%;
+    top:30%;
+}
+#contact-options section span{
+    font-weight: bold;
+    text-align: center;
+    position: absolute;
+    left:37%;
+    top: 30%;
+    font-size: 1.2em;
+
+}
+#contact-options section p{
+    margin-left: 20%;
+    font-size: 0.95em;
+    position:absolute;
+    left:17%;
+    top:45%;
+}
+#message-form {
+    width:60%;
+
+    margin-bottom:40px;
+}
+#message-form form {
+    border: 1px solid #ced4da;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+#message-form .btn{
+    background-color:#444;
+    color:#fff;
+    border: none;
+}
+#message-form .btn:hover{
+    background-color:#fff;
+    color:#444;
+    border: 1px solid #444;
+}
+
+
+
+.form-control:hover{
+    box-shadow:0 0 2px #999;
+}
+/*END OF CONTACT US PAGE*/
+
+/*FOOTER*/
+footer {
+    background-color: #222;
+    color: #fff;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    clear: left;
+}
+/*footer titles*/
+footer #quick-links span.title, footer #contact-us span.title, footer #follow-us span.title{
+    font-size: 1.35em;
+
+}
+footer #quick-links, footer #contact-us, footer #follow-us{
+    line-height: 1.9;
+}
+footer #quick-links a{/*color for quick links*/
+    color: #fff;
+}
+footer #quick-links a:hover{
+    text-decoration: none;
+    color:#bfbfbf;
+}
+footer #follow-us a i{/*Make a social icon cirlce Icon*/
+    background-color: #fff;
+    border-radius: 30px;
+    color: #333;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    line-height: 27px;
+    margin: auto 3px;
+    font-size: 15px;
+    text-align: center;
+}
+/*Change color when hover on each icon*/
+footer #follow-us a .fa-facebook:hover{/*facebook*/
+    background-color:#3b5998 ;
+    color: white;
+}
+footer #follow-us a .fa-telegram-plane:hover{/*telegram*/
+    background-color:#0088cc;
+    color: white;
+}
+footer #follow-us a .fa-youtube:hover{/*youtube*/
+    background-color:#FF0000;
+    color: white;
+}
+footer .copyright{/*Copy right*/
+    margin-top: 40px;
+    color: #fff;
+}
+footer hr {/*White horizontal line*/
+    border-color:#fff;
+}
+/*END OF FOOTER*/
+/*END BASE STYLE*/
+
+/*MEDIA QUERY*/
+   /***EXTRA LARGE DEVICES****/
+@media (min-width:1200px){
+
+}
+   /***LARGE DEVICES****/
+@media (min-width:992px) and (max-width:1199px){
+    /*HOME PAGE*/
+   #offer-tiles section{
+      max-width: 300px;
+      height: 200px;
+     }
+   #offer-tiles a img {
+    width: 300px;
+    height: 200px;
+    }
+    #about-us-container #photo-brush-paint img{/*brush with top text image*/
+        width:100%;
+        height: 500px;
+
+    }
+    #about-us-container #text-about-us p a span{/*Read More*/
+        position: absolute;
+        top: 75%;
+        right: 45%;
+        left: 32%;
+    }
+   /*END OF HOME PAGE*/
+
+   /*CONTACT PAGE*/
+#contact-options section i{
+    font-size: 3.5em;
+    position:absolute;
+    left:7%;
+    top:30%;
+}
+#contact-options section span{
+    font-weight: bold;
+    text-align: center;
+    position: absolute;
+    left:30%;
+    top: 30%;
+    font-size: 1.1em;
+
+}
+#contact-options section p{
+    margin-left: 20%;
+    font-size: 0.9em;
+    position:absolute;
+    left:10%;
+    top:45%;
+}
+   /*END OF CONTACT PAGE*/
+}
+  /****MEDIUM DEVICES***/
+@media (min-width:768px) and (max-width:991px){
+
+    .navbar-brand h1{/* Company name */
+        font-size: 1em;
+    }
+    #nav-list a span {/*Navigation list items*/
+        padding-right: 2px;
+    }
+    /*FOOTER*/
+    footer {
+        font-size: 0.9em;
+    }
+    /*footer titles*/
+   footer #quick-links span.title, footer #contact-us span.title, footer #follow-us span.title{
+    font-size: 1.3em;
+   }
+   /*END OF FOOTER*/
+
+   /*HOME PAGE*/
+    #offer-tiles section{
+    max-width: 220px;
+    height: 170px;
+    }
+    #offer-tiles a img {
+    width: 220px;
+    height: 170px;
+    }
+
+    #about-us-container #text-about-us h3{/*About us title*/
+        margin-top: 100px;
+
+    }
+    #about-us-container #photo-brush-paint img{/*brush with top text image*/
+        width:100%;
+        height: 400px;
+
+    }
+    #about-us-container #text-about-us p a span{/*Read More*/
+        position: absolute;
+        top: 80%;
+        right: 50%;
+        left: 32%;
+
+    }
+    #about-us-container #text-about-us p{/*About us paragraph*/
+        font-size: 0.85em;
+    }
+
+    #sample-work .row section span{
+      margin-left:12%;
+    }
+    #sample-work section img{
+      width:100%;
+      height:200px;
+    }
+
+    /*END OF HOME PAGE*/
+
+    /*PRODUCTS PAGE*/
+    #productAndDesc #product-img img{
+        width:80%;
+        height: 70%;
+
+    }
+
+    /*END OF PRODUCTS PAGE*/
+    /*CONTACT PAGE*/
+#contact-options  section{
+    width:32.5%;
+    margin-right: 5px;
+}
+#contact-options section i{
+    font-size: 3.2em;
+    position:absolute;
+    left:2%;
+    top:30%;
+}
+#contact-options section span{
+    font-weight: bold;
+    text-align: center;
+    position: absolute;
+    left:28%;
+    top: 30%;
+    font-size: 1.1em;
+
+}
+#contact-options section p{
+    margin-left: 20%;
+    font-size: 0.85em;
+    position:absolute;
+    left:7%;
+    top:45%;
+}
+   /*END OF CONTACT PAGE*/
+}
+   /****SMALL DEVICES****/
+@media (min-width:576px) and (max-width:767px){
+    .navbar-brand h1{/* Company name */
+        font-size: 1.2em;
+    }
+    /*HOME PAGE*/
+    #offer-tiles section{
+        max-width: 100%;
+        height: 200px;
+
+        }
+    #offer-tiles a img {
+        width: 100%;
+        height: 200px;
+
+     }
+     #about-us-container #text-about-us h3{/*About us title*/
+        margin-top: 10px;
+
+    }
+     #about-us-container #text-about-us p a span{/*Read More*/
+        position: absolute;
+        top: 95%;
+        right: 33%;
+
+     }
+     #about-us-container #photo-brush-paint img{/*brush with top text image*/
+        width:100%;
+        height: 300px;
+    }
+
+    /*END OF HOME PAGE*/
+
+    /*ABOUTUS PAGE*/
+    #aboutUsAndContactus p {
+        width: 100%;
+    }
+    /*END OF ABOUTUS PAGE*/
+
+    /*PRODUCT PAGE*/
+    #our-product p {
+        width: 100%;
+     }
+     #productAndDesc #product-desc #product-item-desc{
+        width:100%;
+        margin-top: 5px;
+    }
+    #productAndDesc #product-desc{
+        margin-top: 0px;;
+  }
+    #productAndDesc #product-img{
+        /* border: 2px solid black; */
+
+    }
+    #productAndDesc #product-img img{
+        width: 65%;
+        height: 100%;
+    }
+    /*END OF PRODUCT PAGE*/
+
+    /*CONTACT PAGE*/
+    #contact-options  section{
+        width:100%;
+
+    }
+    #contact-options section i{
+        font-size: 4em;
+        position:absolute;
+        left:30%;
+        top:30%;
+    }
+    #contact-options section span{
+        font-weight: bold;
+        text-align: center;
+        position: absolute;
+        left:45%;
+        top: 30%;
+        font-size: 1.1em;
+
+    }
+    #contact-options section p{
+        margin-left: 20%;
+        font-size: 0.9em;
+        position:absolute;
+        left:25%;
+        top:45%;
+    }
+    #message-form {
+        width:100%;
+
+    }
+
+    /*END OF CONTACT PAGE*/
+}
+  /****EXTRA SMALL DEVICES****/
+@media(min-width:321px) and (max-width:575px){
+    .navbar-brand h1{/* Company name */
+        font-size: 1.1em;
+    }
+    .navbar-brand #factory{/*factory*/
+        font-size: 0.6em;
+
+    }
+    /*HOME PAGE*/
+    #offer-tiles {
+        margin-left:2.5% ;
+    }
+
+    #offer-tiles section{
+        max-width: 100%;
+        height: 200px;
+
+        }
+    #offer-tiles a img {
+        width: 100%;
+        height: 200px;
+
+     }
+     #about-us-container #photo-brush-paint img{/*brush with top text image*/
+        width:100%;
+        height: 300px;
+
+    }
+
+    #about-us-container #text-about-us h3{/*About us title*/
+        margin-top: 10px;
+
+    }
+    #about-us-container #text-about-us p a span{/*Read More*/
+        position: absolute;
+        top: 95%;
+        right: 28%;
+        width:40%;
+
+
+    }
+
+    #sample-work .row section span{/* */
+      font-size: 1.3em;
+      margin-left: 24%;
+
+    }
+
+    /*END OF HOME PAGE*/
+
+    /*ABOUTUS PAGE*/
+    #aboutUsAndContactus p {
+        width: 100%;
+    }
+    /*END OF ABOUTUS PAGE*/
+
+    /*PRODUCT PAGE*/
+    #our-product p {
+        width: 100%;
+     }
+     #productAndDesc #product-desc #product-item-desc{
+        width:100%;
+        margin-top: 5px;
+    }
+    #productAndDesc #product-desc{
+        margin-top: 0px;;
+  }
+    #productAndDesc #product-img{
+        /* border: 2px solid black; */
+
+    }
+    #productAndDesc #product-img img{
+        width: 65%;
+        height: 100%;
+    }
+    /*END OF PRODUCT PAGE*/
+
+    /*CONTACT PAGE*/
+    #contact-options  section{
+        width:100%;
+
+    }
+    #contact-options section i{
+        font-size: 4em;
+        position:absolute;
+        left:20%;
+        top:30%;
+    }
+    #contact-options section span{
+        font-weight: bold;
+        text-align: center;
+        position: absolute;
+        left:42%;
+        top: 30%;
+        font-size: 1.1em;
+
+    }
+    #contact-options section p{
+        margin-left: 20%;
+        font-size: 0.9em;
+        position:absolute;
+        left:22%;
+        top:45%;
+    }
+    #message-form {
+        width:100%;
+
+    }
+
+    /*END OF CONTAC PAGE*/
+
+}
+
+ /****EXTRA Extra SMALL DEVICES**In this case we remove the Logo to get space**/
+ @media(max-width:320px){
+    .navbar-brand h1{/* Company name */
+        font-size: 1em;
+    }
+    .navbar-brand #factory{/*factory*/
+        font-size: 0.7em;
+
+    }
+
+    #logo-img{
+        display: none;
+    }
+
+    /*HOME PAGE*/
+    #offer-tiles{
+        margin-left: 2.5%;
+
+    }
+
+    #offer-tiles section{
+        max-width: 100%;
+        height: 160px;
+    }
+    #offer-tiles a img {
+        width: 100%;
+        height: 160px;
+    }
+    #about-us-container #photo-brush-paint img{/*brush with top text image*/
+        width:100%;
+        height: 300px;
+
+    }
+    #about-us-container #text-about-us h3{/*About us title*/
+        margin-top: 10px;
+
+    }
+    #about-us-container #text-about-us p a span{/*Read More*/
+        position: absolute;
+        top: 95%;
+        right: 28%;
+        width: 45%;
+    }
+
+    #sample-work h3{
+      font-size: 1.3em;
+    }
+
+    #sample-work .row section span{
+      margin-left:11%;
+    }
+
+    #sample-work section img{
+      width:100%;
+      height:200px;
+    }
+
+    /*END OF HOME PAGE*/
+
+    /*ABOUTUS PAGE*/
+    #aboutUsAndContactus p {
+        width: 100%;
+    }
+    /*END OF ABOUTUS PAGE*/
+
+    /*PRODUCT PAGE*/
+    #our-product p {
+        width: 100%;
+     }
+     #productAndDesc #product-desc #product-item-desc{
+        width:100%;
+        margin-top: 5px;
+    }
+    #productAndDesc #product-desc{
+        margin-top: 0px;;
+  }
+    #productAndDesc #product-img{
+        /* border: 2px solid black; */
+
+    }
+    #productAndDesc #product-img img{
+        width: 65%;
+        height: 100%;
+    }
+    /*END OF PRODUCT PAGE*/
+    /*CONTACT PAGE*/
+    #contact-options  section{
+        width:100%;
+
+    }
+    #contact-options section i{
+        font-size: 4em;
+        position:absolute;
+        left:2%;
+        top:30%;
+    }
+    #contact-options section span{
+        font-weight: bold;
+        text-align: center;
+        position: absolute;
+        left:30%;
+        top: 30%;
+        font-size: 1.1em;
+
+    }
+    #contact-options section p{
+        margin-left: 20%;
+        font-size: 0.9em;
+        position:absolute;
+        left:10%;
+        top:45%;
+    }
+    #message-form {
+        width:100%;
+
+    }
+
+    /*END OF CONTAC PAGE*/
+
+}
+
+

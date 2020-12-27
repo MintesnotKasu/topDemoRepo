@@ -24,9 +24,13 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -119,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "TopPaintsFactory"
+    }
+  },
+  "defaultProject": "TopPaintsFactory",
+  "cli": {
+    "analytics": "b317b01a-b55b-420a-84a6-f5a0cbd28ca4"
+  }
 }
