@@ -65,7 +65,7 @@ body{
 /*HEADER*/
 
 #logo-img {/*Logo image*/
-    background-image: url("assets/images/company-logo.png");
+    background-image: url("assets/images/company-logo.jpg");
     background-repeat: no-repeat;
     width: 60px;
     height: 48px;
@@ -598,9 +598,11 @@ footer hr {/*White horizontal line*/
 
     /*PRODUCTS PAGE*/
     #productAndDesc #product-img img{
-        width:80%;
+        width:100%;
         height: 70%;
-
+       }
+    #productAndDesc #product-desc #product-item-desc{
+        margin-top: 2px;
     }
 
     /*END OF PRODUCTS PAGE*/
@@ -676,21 +678,23 @@ footer hr {/*White horizontal line*/
     #our-product p {
         width: 100%;
      }
-     #productAndDesc #product-desc #product-item-desc{
+
+    /*  #productAndDesc #product-desc #product-item-desc{
         width:100%;
         margin-top: 5px;
+    } */
+    #productAndDesc{
+       position: relative;
     }
-    #productAndDesc #product-desc{
-        margin-top: 0px;;
-  }
-    #productAndDesc #product-img{
-        /* border: 2px solid black; */
 
+     #productAndDesc .row #product-desc #product-item-namec{
+        top: 50%;
+        left: 10%;
     }
-    #productAndDesc #product-img img{
+    /* #productAndDesc #product-img img{
         width: 65%;
         height: 100%;
-    }
+    } */
     /*END OF PRODUCT PAGE*/
 
     /*CONTACT PAGE*/
